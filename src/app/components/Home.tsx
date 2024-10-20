@@ -1,4 +1,3 @@
-
 "use client";
 
 import { useEffect, useState } from 'react';
@@ -30,15 +29,20 @@ const HomePage = () => {
         onClick={handleNavigateToBody}
         className="bg-blue-600 text-white p-3 rounded-lg font-bold hover:bg-blue-700 transition duration-300"
       >
+        
+
         Predict
       </button>
 
       <button
         onClick={handleNavigateToBody}
-        className="bg-blue-600 text-white mt-5 p-3 rounded-lg font-bold hover:bg-blue-700 transition duration-300"
+        className="bg-blue-600 text-white p-3 mt-16 rounded-lg font-bold hover:bg-blue-700 transition duration-300"
       >
+        
+
         Login
       </button>
+
     </div>
   );
 };

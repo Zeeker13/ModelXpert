@@ -1,12 +1,12 @@
-import Head from 'next/head';
-import Body from './components/Body';
+import Auth from './components/Auth';
+import HomePage from './components/Home';
 
-export default function Home() {
+const Page = () => {
   return (
-   <Body>
-    
-   </Body>
- 
-  
+    <div className="flex items-center justify-center h-screen bg-gray-800">
+      <HomePage/>
+    </div>
   );
-}
+};
+
+export default Page;
