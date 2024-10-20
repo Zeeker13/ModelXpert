@@ -1,4 +1,3 @@
-// components/Auth.tsx
 "use client"; // This component uses Client Components
 
 import { useState } from 'react';

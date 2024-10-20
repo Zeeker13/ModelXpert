@@ -39,7 +39,18 @@ const RegisterPage = () => {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center h-screen bg-gray-900 text-white">
+
+    <div className="flex flex-col items-center justify-center h-screen bg-gray-900 text-white flex flex-col items-center justify-center h-screen text-white px-4" 
+    style={{
+      backgroundImage: 'url(/gg.png)', 
+      backgroundSize: 'cover', 
+      backgroundPosition: 'center', 
+      backgroundRepeat: 'no-repeat', 
+      
+    }}
+  
+    
+    >
       <h1 className="text-3xl font-bold mb-6">Register</h1>
       <div className="flex flex-col space-y-4 w-80">
         {error && <p className="text-red-500">{error}</p>}

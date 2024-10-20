@@ -30,6 +30,8 @@ export const loadUser = (): User | null => {
   return null;
 };
 
+
+
 // Delete user from local storage
 export const deleteUser = (): void => {
   if (typeof window !== "undefined") {

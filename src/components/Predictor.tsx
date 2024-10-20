@@ -33,7 +33,10 @@ const Predictor = () => {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center h-screen bg-gray-900 text-white px-4">
+    <div
+      className="flex flex-col items-center justify-center h-screen bg-cover bg-center text-white px-4"
+      style={{ backgroundImage: "url('/Untitled-1.png')" }}
+    >
       <h1 className="text-5xl font-bold mb-2">WELCOME</h1>
       <p className="text-xl mb-10">to Car Model Predictor</p>
       <div className="text-center mb-10">
