@@ -1,25 +1,24 @@
-
 "use client";
 
-import { useEffect, useState } from 'react';
-import { useRouter } from 'next/navigation';
+import { useEffect, useState } from "react";
+import { useRouter } from "next/navigation";
 
-const HomePage = () => {
+const Home = () => {
   const router = useRouter();
   const [isLoggedIn, setIsLoggedIn] = useState(false);
 
   useEffect(() => {
     // Check if the user is logged in
-    const loggedInStatus = localStorage.getItem('isLoggedIn');
-    if (loggedInStatus === 'true') {
+    const loggedInStatus = localStorage.getItem("isLoggedIn");
+    if (loggedInStatus === "true") {
       setIsLoggedIn(true);
     } else {
-      router.push('/auth'); // Redirect to auth page if not logged in
+      router.push("/auth"); // Redirect to auth page if not logged in
     }
   }, [router]);
 
   const handleNavigateToBody = () => {
-    router.push('/body'); // Navigate to body.tsx
+    router.push("/body"); // Navigate to body.tsx
   };
 
   return (
@@ -35,7 +34,7 @@ const HomePage = () => {
 
       <button
         onClick={handleNavigateToBody}
-        className="bg-blue-600 text-white mt-5 p-3 rounded-lg font-bold hover:bg-blue-700 transition duration-300"
+        className="bg-blue-600 text-white p-3 mt-16 rounded-lg font-bold hover:bg-blue-700 transition duration-300"
       >
         Login
       </button>
@@ -43,4 +42,4 @@ const HomePage = () => {
   );
 };
 
-export default HomePage;
+export default Home;

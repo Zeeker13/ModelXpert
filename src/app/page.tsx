@@ -1,10 +1,11 @@
-import Auth from './components/Auth';
-import HomePage from './components/Home';
+import Body from "@/components/Body";
+import Header from "../components/Header";
 
 const Page = () => {
   return (
-    <div className="flex items-center justify-center h-screen bg-gray-800">
-      <HomePage/>
+    <div className="justify-center h-screen">
+      <Header />
+      <Body />
     </div>
   );
 };
